@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Sexy Data</title>
+
+    <!-- 
+        TODO:
+        Antal mennesker - DONE!
+        Antal bade + antal tid! - DONE!
+        Har man Vaske maskine og opvasker?
+        Antal toilet besøg
+        
+        Setup first press run button will shot a animated graph in frame.
+        A Counter that shows live avarage water use by that size of family
+        Send data to the physic thing that will change something?
+
+        #If more time
+        Build a interactive map/house that can give you info about what uses what
+        Visualize one house holes data in a sexy way.
+    -->
+</head>
+<body>
+    <content></content>
+    <footer>
+        <div class="footerItem">
+            <span class="material-icons md-40">
+                groups
+            </span>
+            <div class="amount">
+                <div id="peopleInc" class="mouseClick noselect"><span class="material-icons md-34">
+                    keyboard_arrow_up
+                </span></div>
+                <p id="peopleNumber" class="noselect"></p>
+                <div id="peopleDec" class="mouseClick noselect"><span class="material-icons md-34">
+                    keyboard_arrow_down
+                </span></div>
+            </div>
+        </div>
+        <div class="footerItem">
+            <span class="material-icons md-40">
+                shower
+            </span>
+            <div class="amount">
+                <div id="showerInc" class="mouseClick noselect"><span class="material-icons md-34">
+                    keyboard_arrow_up
+                </span></div>
+                <p id="showerNumber" class="noselect"></p>
+                <div id="showerDec" class="mouseClick noselect"><span class="material-icons md-34">
+                    keyboard_arrow_down
+                </span></div>
+                
+            </div>
+            <div class="duration">
+                <label for="showerDurationLabel">Choose Duration:</label>
+                <select id="showerDuration" name="ShowerDuration">
+                  <option value="10">10 min</option>
+                  <option value="15">15 min</option>
+                  <option value="20">20 min</option>
+                  <option value="30">30 min</option>
+                  <option value="45">45 min</option>
+                  <option value="60">60 min</option>
+                </select> 
+            </div>
+        </div>
+    </footer>
+
+
+<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
